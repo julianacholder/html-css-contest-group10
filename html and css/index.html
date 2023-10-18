@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradlink</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--Navigation bar-->
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">About</a>
+  <a href="#contact">Events</a>
+  <a href="#about">Contact us</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  <!--Hero Image plus welcome message-->
+</div>
+<div class="hero-image">
+    <div class="hero-text">
+      <h1>Welcome to GradLink!</h1>
+      <br>
+      <p>GradLink is a website designed to keep you informed about upcoming events at your university. We offer a wide range of events, 
+        including professional development and campus events. 
+        Our goal is to help you stay connected with your alma mater and fellow alumini.
+      </p>
+    </div>
+  </div>
+
+  <!--About us and meet the team plus images-->
+    <div class="about-us">
+    <h1>About</h1>
+    <br>
+    <p>Meet the creators of GradLink.</p>
+    </div>
+
+    <div class="row">
+		<div class="column">
+			<div class="card">
+				<img src="Juliana negpod .jpg" alt="Juliana">
+				<div class="container">
+					<h2>Juliana C. Holder</h2>
+					<p>CEO & Founder</p>
+					<p>Oversee mission to help graduates seamlessly transition into the professional world</p>
+					<p>j.holder@alustudent.com</p>
+          <button class="button">Contact us</button>
+				</div>
+			</div>
+		</div>
+		<div class="column" id="move">
+			<div class="card">
+				<img src="Joseph.jpg" alt="Joseph">
+				<div class="container">
+					<h2>Joseph Majabo</h2>
+					<p>Events Curator</p>
+					<p>Responsible for planning, organizing, and coordinating events, ensuring they align with the desired theme or purpose</p>
+					<p>example@example.com</p>
+          <button class="button">Contact us</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--Upcoming events-->
+
+<div class="upcom-events">
+ <div class="upcom-header">
+  <h1>Upcoming Events</h1>
+  <p>Peek at some alumni events 
+    happening just around the corner.</p>
+  </div>
+  <div class="event">
+    <p id="month">Oct</p>
+    <h2 id="date">20</h2>
+    <h2>Micro Lecture on Major topics</h2>
+    <p>Friday, October 20,2023 | 10:14 AM - 11:30 AM</p>
+    <p>Online</p>
+    <p>Organizer | Reunion Committee</p>
+  </div>
+  <div class="event">
+    <p id="month">Nov</p>
+    <h2 id="date">10</h2>
+    <h2>Girls Night Out</h2>
+    <p>Saturday, November 10,2023 | 10:00 PM - 12:30 AM</p>
+    <p>Online</p>
+    <p>Organizer | Dance Committee</p>
+  </div>
+
+  <div class="event">
+    <p id="month">Dec</p>
+    <h2 id="date">25</h2>
+    <h2>Christmas Party</h2>
+    <p>Friday, December 25,2023 | 9:00 AM - 5:30 PM</p>
+    <p>Online</p>
+    <p>Organizer | Reunion Committee</p>
+  </div>
+  <button class="event-button">View more Events</button>
+</div>
+
+<!--Professional Development -->
+
+<div class="profess-events">
+  <div class="profess-header">
+   <h1>Professional Development</h1>
+   <p>Peek at some alumni events 
+     happening just around the corner.</p>
+ </div>
+   <div class="event">
+     <p id="month">June</p>
+     <h2 id="date">10</h2>
+     <h2>Industry Conferences:</h2>
+     <p>Friday, June 10,2024 | 8:10 AM - 11:30 AM</p>
+     <p>Online</p>
+     <p>Organizer | Reunion Committee</p>
+   </div>
+   <div class="event">
+     <p id="month">July</p>
+     <h2 id="date">5</h2>
+     <h2>Trade Shows and Expos</h2>
+     <p>Saturday, July 5,2024 | 6:00 PM - 10:30 PM</p>
+     <p>Online</p>
+     <p>Organizer |Union Committee</p>
+   </div>
+ 
+   <div class="event">
+     <p id="month">August</p>
+     <h2 id="date">21</h2>
+     <h2>Networking Mixers</h2>
+     <p>Friday, August 21,2023 | 12:00 PM - 5:30 PM</p>
+     <p>Online</p>
+     <p>Organizer | Reunion Committee</p>
+   </div>
+   <button class="register-button">Register</button>
+ </div>
+<!--Form to reserve a spot-->
+ <div class="form-container">
+ <h1 class="form-header">Reserve a spot!!</h1>
+ <form action="" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+  
+  <label for="event">Event:</label>
+  <select id="event" name="event" required>
+    <option value="">Select an event</option>
+    <option value="concert">Upcoming event</option>
+    <option value="conference">Professional Event</option>
+  </select>
+  
+  <label for="comments">Comments:</label>
+  <textarea id="comments" name="comments"></textarea>
+  
+  <button type="submit">Reserve your spot</button>
+</div>
+  </form>
+</body>
+</html>

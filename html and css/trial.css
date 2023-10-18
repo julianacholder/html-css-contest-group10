@@ -1,0 +1,42 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.reserve-btn{
+	background-color: black;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	margin-top: 50px;
+  }
+  
+  label {
+	font-weight: bold;
+	margin-top: 20px;
+  }
+  
+  input, select, textarea {
+	width: 20%;
+	padding: 10px;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+  }
+  
+  button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	margin-top: 20px;
+	cursor: pointer;
+  }
+  
+  button:hover {
+	background-color: #3e8e41;
+  }
