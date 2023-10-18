@@ -76,13 +76,8 @@
 
 /* The hero image */
 .hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("gradlink\ photo.jpg");
-
-  /* Set a specific height */
   height: 80%;
-
-  /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,17 +103,18 @@
 .hero-text p{
     font-size: 1.5rem;
 }
+/*About us section*/
  .row::after {
-        content: "";
-        clear: both;
-        display: table;
-        margin: auto;
+   content: "";
+   clear: both;
+   display: table;
+   margin: auto;
     }
     
     .column {
-        float: left;
-        width: 33.33%;
-        padding: 5px;
+      float: left;
+      width: 33.33%;
+      padding: 5px;
     }
     
     .card {
@@ -180,7 +176,34 @@
   .button:hover {
     background-color: #555;
   }
-
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  .column {
+      width: 100%; 
+  }
+  
+  #move {
+      margin-left: 5%; 
+  }
+  
+  .about-us {
+      margin-top: 10px; 
+      margin-left: 5%; 
+  }
+  
+  .about-us h1 {
+      font-size: 1.5rem; 
+  }
+  
+  .row {
+      padding: 0; 
+  }
+  
+  .button {
+      padding: 5px;
+  }
+}
+/*Upcoming events section*/
   .upcom-events {
     width: 100%;
     height: 90vh;
@@ -244,6 +267,32 @@
     text-align: center;
     font-size: 20px;
 }
+ /* Media query for screens smaller than 600px */
+ @media screen and (max-width: 600px) {
+  .upcom-header, .profess-header {
+      margin-left: 5%; 
+      top: 60px; 
+  }
+
+  .upcom-header h1, .profess-header h1 {
+      font-size: 2rem; 
+  }
+
+  .upcom-header p, .profess-header p {
+      font-size: 16px; 
+  }
+
+  .event {
+      margin-left: 5%; 
+  }
+
+  .event p {
+      font-size: 0.9rem; 
+      margin-top: 5px;
+  }
+}
+
+/*Professional events section*/
   
   .profess-events {
     background-color: #b1040e;
@@ -285,6 +334,10 @@
   text-align: center;
   font-size: 20px;
   }
+ 
+
+/*Reserve spot form*/
+
 .form-container{
   background-color: rgb(244, 244, 244);
   width: 100%;
@@ -322,14 +375,14 @@ input, select, textarea {
   }
       
 button {
-      background-color: gray;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      margin-top: 20px;
-      cursor: pointer;
-      }
+  background-color: gray;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  }
       
  button:hover {
       background-color: black;
